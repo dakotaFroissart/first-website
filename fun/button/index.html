@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:url" content="http://www.powi.club/fun/button">
+    <meta property="og:title" content="Powi Button">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Powi Club">
+    <meta property="og:image" content="http://powi.club/images/powi.png">
+    <meta property="og:description" content="LE ! BOUTON !!!">
+    <meta name="theme-color" content="#FFE894">
+    <link rel="icon" href="/images/powi.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/nav.css">
+    <title>Button</title>
+</head>
+<body>
+    <nav>
+        <a href="http://www.powi.club" id="nav_buttons">
+            Accueil
+        </a>
+        <div id="nav_buttons" class="dropdown">
+            <a class="dropbtn">Fun</a>
+            <div class="dropdown-content">
+                <a href="/fun/spin/" id="nav_buttons">Spin</a>
+                <a href="/fun/button/" id="nav_buttons">Button</a>
+            </div>
+        </div>
+        <aside>
+            <a href="/discord/" id="nav_buttons" style="line-height: 55px;">
+                <img src="/images/small_logo_white_RGB.png"
+                        alt="discord_logo-plus-wordmark-white"
+                        height="25px">
+            </a>
+            <a href="mailto:aza@powi.club" id="nav_buttons">
+                Contact
+            </a>
+        </aside>
+    </nav>
+    <button class="button" onclick="counter()"><img src="/images/powi.png" height="40px"></button>
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+    <div id="counter_div" style="margin-top: 3px;">Score : 0</div>
+    <script src="button.js"></script>
+</body>
+</html>

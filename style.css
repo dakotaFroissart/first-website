@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "uni-sans-heavy";
+    src: url("fonts/uni-sans-heavy.otf");
+}
+
+header {
+    font-family: "uni-sans-heavy";
+    font-size: normal;
+    background-color: #2F3136;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 0 0 30px 30px;
+    text-shadow: 4px 4px 0 black;
+}
+
+header mark {
+    color: #ffce54;
+    text-decoration: none;
+    background-color: #2F3136;
+}
+
+header img {
+    margin: auto;
+}
+
+body {
+    background-image: url("images/powiteambg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Change la taille de l'image par rapport à la taille de la page */
+    background-position: 0% 215px;
+    /* Taille du header */
+    background-color: #2C2F33;
+    color: #f7f7f7;
+    margin: 0;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+}
+
+.aside-centre {
+    position: absolute;
+    right: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 45%;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    height: 50%;
+    width: 50%;
+    padding-top: 230px;
+    padding-left: 25%;
+}

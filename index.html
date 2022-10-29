@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+Eh toi, oui toi ... Je t'ai vu checker le code-source dégueux.
+Mais tkt, ça reste entre nous hein ?
+C'est bien pour ça que je t'ai fait ce petit easter-egg.
+-->
+<head>
+    <meta charset="utf-8">
+    <meta property="og:url" content="http://www.powi.club/">
+    <meta property="og:title" content="Powi Club">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Powi Club">
+    <meta property="og:image" content="/images/powi.png">
+    <meta property="og:description" content="Bienvenue sur le site du Powi Club !">
+    <meta name="theme-color" content="#FFE894">
+    <link rel="icon" href="/images/powi.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <title>Powi Club</title>
+</head>
+
+<body>
+    <div id="particles-js">
+    </div>
+    <script>
+        particlesJS.load("particles-js", "particlesjs-config.json")
+    </script>
+    <nav>
+        <a href="http://www.powi.club" id="nav_buttons">
+            Accueil
+        </a>
+        <div id="nav_buttons" class="dropdown">
+            <a class="dropbtn">Fun</a>
+            <div class="dropdown-content">
+                <a href="/fun/spin/" id="nav_buttons">Spin</a>
+                <a href="/fun/button/" id="nav_buttons">Button</a>
+            </div>
+        </div>
+        <aside>
+            <a href="/discord/" id="nav_buttons" style="line-height: 55px;">
+                <img src="/images/small_logo_white_RGB.png"
+                        alt="discord_logo-plus-wordmark-white"
+                        height="25px">
+            </a>
+            <a href="mailto:aza@powi.club" id="nav_buttons">
+                Contact
+            </a>
+        </aside>
+    </nav>
+    <header>
+        <img src="/images/powiclub.gif" alt="Powi Club GIF" align="center" height="115">
+        <h1>Bienvenue sur le site du <mark>Powi Club</mark> !</h1>
+    </header>
+    <aside class="aside-centre">
+        <a class="twitter-timeline"
+           width="350"
+           height="500"
+           data-theme="dark"
+           href="https://twitter.com/PowiTeam?ref_src=twsrc%5Etfw">
+                 Tweets by PowiTeam
+        </a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+        </script>
+    </aside>
+    <footer>
+        <p id="copyright"></p>
+        <script>
+            var today = new Date();
+            var year = today.getFullYear();
+            document.getElementById("copyright").innerHTML = "PowiTeam© Company " + year
+        </script>
+    </footer>
+</body>
+
+</html>

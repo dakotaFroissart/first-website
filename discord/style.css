@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "uni-sans-heavy";
+    src: url("/fonts/uni-sans-heavy.otf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #2C2F33;
+    margin: 0;
+    color: white;
+    margin-bottom: 39%;
+}
+
+main
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+h1, h2, h3
+{
+    font-family: "uni-sans-heavy";
+    color: #5865f2;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.powi-legendaire_color
+{
+    color: #ed4245;
+}
+
+.program_color
+{
+    color: #8067aa;
+}
+
+.powi-police_color
+{
+    color: #E67E22;
+}
+
+.powi-ancestral_color
+{
+    color: #fee75c;
+}
+
+.powi-adulte_color
+{
+    color: #57f287;
+}
+
+.jeune-powi_color
+{
+    color: #5865f2;
+}
+
+.bebe-powi_color
+{
+    color: #eb459e;
+}
+
+.fond-noir
+{
+    background-color: #23272A;
+    color: #99AAB5;
+}
+
+.italique
+{
+    font-style: italic;
+}
+
+ul, ol
+{
+    list-style-type: none;
+}
+
+#protips
+{
+    text-decoration: underline;
+}
+
+.aside-left
+{
+    margin-top: 10px;
+    position: fixed;
+    left: 3px;
+    width: 18%;
+    border-radius: 45px;
+    background-color: #23272A;
+    background-position: left;
+    height: fit-content;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.aside-left *
+{
+    margin-bottom: 2px;
+}
+
+.white-link
+{
+    color: white;
+}
+
+.aside-right
+{
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+/* Top button */
+
+#myBtn 
+{
+    font-family: "uni-sans-heavy";
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #5865f2; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 45%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}

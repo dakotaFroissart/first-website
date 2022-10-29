@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "uni-sans-heavy";
+    src: url("fonts/uni-sans-heavy.otf");
+}
+
+nav, nav aside{
+    background-color: #23272A;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav aside
+{
+    position: absolute;
+    right: 3px;
+}
+
+#nav_buttons
+{
+    font-family: "uni-sans-heavy";
+    color: #FFFFFF;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    /* Centre le text verticalement (doit être égale à la hauteur du block) */
+    min-width: fit-content;
+    width: 150px;
+    background-color: #36393F;
+    text-align: center;
+    /* Centre le text horizontalement */
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 45px;
+    box-shadow: 2px 2px black;
+    transition: background-color 400ms;
+}
+
+#nav_buttons:hover
+{
+    background-color: #5865f2;
+}
+
+/* Fun button */
+
+.dropdown 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #23272A;
+    border-radius: 0 0 45px 45px;
+}
+
+.dropdown-content a
+{
+    display: block;
+    margin: 5px;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.dropdown-content a:last-child
+{
+    margin-bottom: 25px;
+}

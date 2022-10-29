@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:url" content="http://www.powi.club/fun/spin">
+    <meta property="og:title" content="Powi Spinning">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Powi Club">
+    <meta property="og:image" content="https://i.imgur.com/Emshrqs.gif">
+    <meta property="og:description" content="Fa&icirc;tes tourner le Powi !">
+    <meta name="theme-color" content="#FFE894">
+    <link rel="icon" href="https://i.imgur.com/Emshrqs.gif">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/nav.css">
+    <title>Powi Spinning</title>
+</head>
+
+<body>
+    <nav>
+        <a href="http://www.powi.club" id="nav_buttons">
+            Accueil
+        </a>
+        <div id="nav_buttons" class="dropdown">
+            <a class="dropbtn">Fun</a>
+            <div class="dropdown-content">
+                <a href="/fun/spin/" id="nav_buttons">Spin</a>
+                <a href="/fun/button/" id="nav_buttons">Button</a>
+            </div>
+        </div>
+        <aside>
+            <a href="/discord/" id="nav_buttons" style="line-height: 55px;">
+                <img src="/images/small_logo_white_RGB.png"
+                        alt="discord_logo-plus-wordmark-white"
+                        height="25px">
+            </a>
+            <a href="mailto:aza@powi.club" id="nav_buttons">
+                Contact
+            </a>
+        </aside>
+    </nav>
+    <span>
+        <img src="/images/powi.png" alt="Powi Spinning" id="powheel" onclick="spin()">
+        <script>
+            var rotation = 0;
+            function spin() {
+                var wheel = document.getElementById("powheel");
+
+                rotation += 3600 + Math.round(Math.random() * 360);
+
+                wheel.style.transform = "translate(-50%, -50%) rotate(" + rotation + "deg)";
+            }
+        </script>
+    </span>
+</body>
+</html>

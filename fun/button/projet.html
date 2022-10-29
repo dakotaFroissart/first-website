@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Button</title>
+</head>
+
+<body>
+    <div id="zone">
+        <button class="button">
+            <img src="https://cdn.discordapp.com/emojis/541077527813160970.png" height="40px">
+        </button>
+    </div>
+    <div id="counter_div" style="margin-top: 12px;">Nombre de click : 0</div>
+    <script>
+        var counter_div = document.getElementById("counter_div"),
+            count = 0,
+            btn = $('.button'),
+            rd;
+        $('#zone .button').one('click', counter)
+
+        function counter() {
+            count += 1;
+            counter_div.innerHTML = "Nombre de click : " + count;
+            rd = Math.floor(Math.random() * 5 + 1);
+            removeBtn($(this));
+            generateBtn(rd);
+            $('#zone .button').one('click', counter)
+        };
+
+
+        function removeBtn(btn) {
+            if (count == 1) {
+                btn.parent().children().remove();
+            }
+            if (btn.hasClass('trueBtn')) {
+                btn.parent().children().remove();
+            }
+        }
+
+        function generateBtn(number) {
+            for (let i = 0; i < number; i++) {
+                var btn_tmp = btn.clone();
+
+                if (i == 0) {
+                    btn_tmp.addClass('trueBtn');
+                }
+
+                btn_tmp.css('left', (Math.floor(Math.random() * 7 + 1)) * 10 + '%');
+                btn_tmp.css('top', (Math.floor(Math.random() * 7 + 1)) * 10 + '%');
+
+                $('#zone').append(btn_tmp);
+            }
+        }
+    </script>
+</body>
+
+</html>
+<style>
+    body {
+        text-align: center;
+        background-color: #2C2F33;
+        margin: 0;
+        -khtml-user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #counter_div {
+        color: white;
+    }
+
+    .button {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        background-color: orange;
+        border: none;
+        border-radius: 50%;
+        box-shadow: 0 9px #999;
+        transition: background-color 400ms;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+
+    img {
+        -khtml-user-select: none;
+        -o-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .button:hover {
+        background-color: orangered
+    }
+
+    .button:active {
+        box-shadow: 0 5px #666;
+        background-color: orangered;
+        transform: translateY(4px);
+    }
+</style>
